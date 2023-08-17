@@ -1,0 +1,41 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+}
+
+.cabecalho {
+    padding: 2.5% 0% 0% 10%;
+    
+}
+
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    
+}
+
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+       padding: 10%; 
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+}
+
+
+
+
+
