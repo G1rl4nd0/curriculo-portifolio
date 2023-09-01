@@ -1,0 +1,45 @@
+.title {
+  text-align: center;
+  font-family: 'krona one', sans-serif;
+  font-weight: 400;
+  margin-bottom: 55px;
+  margin-top: 125px;
+  margin-right: 890px;
+
+}
+
+.repo-list {
+  width: 80%; 
+  margin: 0 auto; 
+  margin-bottom: 200px;
+  list-style: none;
+  
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  color: #22d4fd;
+  border: 1px solid #22d4fd;
+  margin-bottom: 20px;
+  border-radius: 32px;
+  padding: 30px;
+  gap: 30px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.link {
+  text-decoration: none;
+  color: #f6f6f6;
+}
+
+
+
+@media (max-width: 1200px) {
+  .title {
+    margin-right: 0;
+    
+  }
+}

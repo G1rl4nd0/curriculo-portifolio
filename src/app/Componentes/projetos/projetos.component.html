@@ -1,0 +1,9 @@
+<h1 class="title">Github</h1>
+<div *ngIf="(repos$ | async) as repos">
+  <ul class="repo-list">
+    <li class="lista"*ngFor="let repo of repos">
+      <h1>{{ repo.name }}</h1>
+      <a class="link" href="{{ repo.html_url }}" target="_blank">{{ repo.html_url }}</a>
+    </li>
+  </ul>
+</div>

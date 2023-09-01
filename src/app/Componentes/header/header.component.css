@@ -2,6 +2,7 @@
     --cor-primaria: #000000;
     --cor-secundaria: #f6f6f6;
     --cor-terciaria: #22d4fd;
+
 }
 
 .cabecalho {
@@ -9,6 +10,9 @@
     
 }
 
+.example-spacer {
+    flex: 1 1 auto;
+}
 
 .cabecalho__menu {
     display: flex;
@@ -23,16 +27,27 @@
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
+
 }
 
 @media (max-width: 1200px) {
+    
     .cabecalho {
-       padding: 10%; 
+       padding: 1%;
+       
     }
 
     .cabecalho__menu {
-        justify-content: center;
+        justify-content: center;           
+        gap: 20px;
+        
     }
+
+    .cabecalho__menu__link {
+      margin-top: 10px;
+        
+    }
+
 }
 
 
