@@ -1,9 +1,15 @@
-<button mat-icon-button [matMenuTriggerFor]="menu">
-  <mat-icon class="menu">menu</mat-icon>
-</button>
+
+<section class="menu">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+</section>
+
+
 
 <mat-menu #menu="matMenu">
   <button mat-menu-item [routerLink]="'/PaginaPrincipal'">Home</button>
   <button mat-menu-item [routerLink]="'/sobreMim'">Sobre Mim</button>
   <button mat-menu-item [routerLink]="'/projetos'">Projetos</button>
 </mat-menu>
+

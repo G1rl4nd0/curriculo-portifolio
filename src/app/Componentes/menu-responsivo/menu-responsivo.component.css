@@ -1,0 +1,13 @@
+
+.mat-icon-button {
+  margin-left: 74rem;
+  
+}
+
+
+@media (max-width: 1200px) {
+  .mat-icon-button {
+    margin-left: 350px;
+    margin-top: 12px;
+  }
+}
