@@ -6,6 +6,7 @@
     --cor-primaria: #000000;
     --cor-secundaria: #f6f6f6;
     --cor-terciaria: #22d4fd;
+    
 }
 
 
@@ -24,12 +25,6 @@ body {
 strong {
     color: var(--cor-terciaria);
 }
-
-
-
-
-
-
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

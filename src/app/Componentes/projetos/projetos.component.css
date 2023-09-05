@@ -19,8 +19,8 @@
 .lista {
   display: flex;
   flex-direction: column;
-  color: #22d4fd;
-  border: 1px solid #22d4fd;
+  color: var(--cor-terciaria);
+  border: 1px solid var(--cor-terciaria);
   margin-bottom: 20px;
   border-radius: 32px;
   padding: 30px;
@@ -33,6 +33,10 @@
 .link {
   text-decoration: none;
   color: #f6f6f6;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 

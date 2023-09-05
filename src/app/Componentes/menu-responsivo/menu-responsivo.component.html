@@ -1,15 +1,29 @@
-
-<section class="menu">
-  <button mat-icon-button [matMenuTriggerFor]="menu">
+<mat-toolbar color="primary" class="mat-elevation-z8">
+  <button (click)="drawer.toggle()" mat-icon-button>
     <mat-icon>menu</mat-icon>
   </button>
-</section>
-
-
-
-<mat-menu #menu="matMenu">
-  <button mat-menu-item [routerLink]="'/PaginaPrincipal'">Home</button>
-  <button mat-menu-item [routerLink]="'/sobreMim'">Sobre Mim</button>
-  <button mat-menu-item [routerLink]="'/projetos'">Projetos</button>
-</mat-menu>
+  <span>Perfil Profissional</span>
+  <span class="example-spacer"></span>
+  <button class="menu__right" routerLink="/PaginaPrincipal" mat-button>Home</button>
+  <button class="menu__right" routerLink="/sobreMim" mat-button>Sobre Mim</button>
+  <button class="menu__right" routerLink="/projetos" mat-button>Projetos</button>
+</mat-toolbar>
+<mat-drawer-container autosize>
+  <mat-drawer #drawer opened="false" mode="over" position="start">
+  <mat-nav-list >
+      <mat-list-item>
+        <button class="menu__drawer" (click)="drawer.close()" routerLink="/PaginaPrincipal" mat-button><mat-icon>home</mat-icon>Home</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button class="menu__drawer" (click)="drawer.close()" routerLink="/sobreMim" mat-button><mat-icon>person</mat-icon>Sobre mim</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button class="menu__drawer" (click)="drawer.close()" routerLink="/projetos" mat-button><mat-icon>insert_drive_file</mat-icon>Projetos</button>
+      </mat-list-item>
+  </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
 

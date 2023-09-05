@@ -1,9 +1,3 @@
-:root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #f6f6f6;
-    --cor-terciaria: #22d4fd;
-}
-
 .apresentacao {
     padding: 10% 10%;
     display: flex;
@@ -28,11 +22,12 @@
 .apresentacao__conteudo__paragrafo {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+    line-height: 36px;
 }
 
 .photo {
     width: 45%;
-    margin-bottom: 280px;
+    margin-bottom: 610px;
     border-radius: 32px;
     
 }
