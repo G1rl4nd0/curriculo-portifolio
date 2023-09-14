@@ -9,32 +9,32 @@
 }
 
 .mat-drawer-container {
-  background-color: #000000;
-  color: #f6f6f6;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
 
 }
 
 .mat-drawer {
   bottom: auto;
   border-radius: 6px;
-  background-color: black;
+  background-color: var(--cor-primaria);
   border: 1px solid var(--cor-terciaria);
-  color: #f6f6f6;
+  color: var(--cor-secundaria);
   
 }
 
 a:-webkit-any-link {
-  color: #f6f6f6;
+  color: var(--cor-secundaria);
 
 }
 
 .mat-list-base .mat-list-item {
-  color: #f6f6f6;
+  color: var(--cor-secundaria);
 
 }
 
 .mat-toolbar.mat-primary {
-  color: #000000;
+  color: var(--cor-primaria);
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 
@@ -54,15 +54,31 @@ a:-webkit-any-link {
 
 
 .menu__right:hover {
-  background-color: #000000;
-  color: #f6f6f6;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
 }
 
 .menu__drawer:hover {
   background-color: var(--cor-terciaria);
-  color: #000000;
+  color: var(--cor-primaria);
 
 }
+
+
+.mat-menu-item {
+  background: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+
+}
+
+.mat-menu-item:hover {
+  background: var(--cor-terciaria);
+  color: var(--cor-primaria);
+}
+
 
 
 @media (max-width: 800px) {
@@ -71,4 +87,5 @@ a:-webkit-any-link {
   }
   
 }
+
 

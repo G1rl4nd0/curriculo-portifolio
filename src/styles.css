@@ -13,6 +13,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -20,11 +21,21 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: white;
+
 }
 
 strong {
     color: var(--cor-terciaria);
+
 }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+div#mat-menu-panel-0 {
+    background: var(--cor-primaria);
+    border: 1px solid var(--cor-terciaria);
+    margin-top: 15px;
+    
+}

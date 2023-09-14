@@ -1,24 +1,30 @@
-<mat-toolbar color="primary" class="mat-elevation-z8">
+<mat-toolbar class="mat-elevation-z8">
   <button (click)="drawer.toggle()" mat-icon-button>
     <mat-icon>menu</mat-icon>
   </button>
-  <span>Perfil Profissional</span>
+  <span>{{ 'header' | translate }}</span>
   <span class="example-spacer"></span>
-  <button class="menu__right" routerLink="/PaginaPrincipal" mat-button>Home</button>
-  <button class="menu__right" routerLink="/sobreMim" mat-button>Sobre Mim</button>
-  <button class="menu__right" routerLink="/projetos" mat-button>Projetos</button>
+  <button class="menu__right" routerLink="/PaginaPrincipal" mat-button>{{ 'menuTextFirst' | translate }}</button>
+  <button class="menu__right" routerLink="/sobreMim" mat-button>{{ 'menuTextSecond' | translate }}</button>
+  <button class="menu__right" routerLink="/projetos" mat-button>{{ 'menuTextThird' | translate }}</button> 
+  <button class="menu__right" mat-button [matMenuTriggerFor]="menu">{{ 'menuTextFourth' | translate }}</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="switchLanguage('pt-br')">{{ 'menuBottonfirst' | translate }}</button>
+    <button mat-menu-item (click)="switchLanguage('en')">{{ 'menuBottonSecond' | translate }}</button>
+    <button mat-menu-item (click)="switchLanguage('es')">{{ 'menuBottonThird' | translate }}</button>
+  </mat-menu>
 </mat-toolbar>
 <mat-drawer-container autosize>
   <mat-drawer #drawer opened="false" mode="over" position="start">
   <mat-nav-list >
       <mat-list-item>
-        <button class="menu__drawer" (click)="drawer.close()" routerLink="/PaginaPrincipal" mat-button><mat-icon>home</mat-icon>Home</button>
+        <button class="menu__drawer" (click)="drawer.close()" routerLink="/PaginaPrincipal" mat-button><mat-icon>home</mat-icon>{{ 'menuTextFirst' | translate }}</button>
       </mat-list-item>
       <mat-list-item>
-        <button class="menu__drawer" (click)="drawer.close()" routerLink="/sobreMim" mat-button><mat-icon>person</mat-icon>Sobre mim</button>
+        <button class="menu__drawer" (click)="drawer.close()" routerLink="/sobreMim" mat-button><mat-icon>person</mat-icon>{{ 'menuTextSecond' | translate }}</button>
       </mat-list-item>
       <mat-list-item>
-        <button class="menu__drawer" (click)="drawer.close()" routerLink="/projetos" mat-button><mat-icon>insert_drive_file</mat-icon>Projetos</button>
+        <button class="menu__drawer" (click)="drawer.close()" routerLink="/projetos" mat-button><mat-icon>insert_drive_file</mat-icon>{{ 'menuTextThird' | translate}}</button>
       </mat-list-item>
   </mat-nav-list>
   </mat-drawer>
