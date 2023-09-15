@@ -12,7 +12,8 @@ export class AppComponent {
 
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang('pt-br');
-  
+    this.translate.use('pt-br');
+    
   }
 
   switchLanguage(Language: string) {

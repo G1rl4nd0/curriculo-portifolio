@@ -15,11 +15,12 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(this.translate.instant('PORTIFOLIO.APRESENTACAO.TITULO'))
   }
 
   switchLanguage(Language: string) {
     this.translate.use(Language);
-  
+    // console.log(this.translate.instant('PORTIFOLIO.APRESENTACAO.TITULO'))
   }
 
 }

@@ -1,14 +1,22 @@
-{
-  "textFirst": "Eleve seu negócio digital a outro nível com um Front-end de qualidade!",
-  "textSecond": "Olá, sou Girlando Junior, desenvolvedor front-end com especialidade em Html, Css, Javascript e Angular. Sou estagiário na empresa Inforplus na parte de desenvolvimento web.",
-  "textThird": "Acesse minhas redes:",
-  "menuTextFirst": "Página Principal",
-  "menuTextSecond": "Sobre Mim",
-  "menuTextThird": "Projetos",
-  "menuTextFourth": "Idiomas",
-  "menuBottonfirst": "Português (Brasil)",
-  "menuBottonSecond": "English",
-  "menuBottonThird": "Espanhol",
-  "footerText": "Desenvolvido por Alura.",
-  "header": "Perfil Profissional"
+{ 
+  "PORTIFOLIO": { 
+    "APRESENTACAO": {
+      "TITULO": "Eleve seu negócio digital a outro nível com um Front-end de qualidade!",
+      "PARAGRAFO": "Olá, sou Girlando Junior, desenvolvedor front-end com especialidade em Html, Css, Javascript e Angular. Sou estagiário na empresa Inforplus na parte de desenvolvimento web.",
+      "LINKS": "Acesse minhas redes:",
+      "FOOTER": "Desenvolvido por Alura."
+    },
+    "MENU": {
+      "TITULO": "Perfil Profissional",
+      "PAGINA_PRINCIPAL": "Página Principal",
+      "SOBRE_MIM": "Sobre Mim",
+      "PROJETOS": "Projetos",
+      "IDIOMAS": "Idiomas",
+      "PORTUGUES": "Português (Brasil)",
+      "INGLES": "English",
+      "ESPANHOL": "Espanhol",
+      "FRANCES": "Francês",
+      "ALEMAO": "Alemão"
+    }
+  }
 }

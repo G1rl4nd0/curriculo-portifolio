@@ -2,29 +2,34 @@
   <button (click)="drawer.toggle()" mat-icon-button>
     <mat-icon>menu</mat-icon>
   </button>
-  <span>{{ 'header' | translate }}</span>
+  <span>{{ 'PORTIFOLIO.MENU.TITULO' | translate }}</span>
   <span class="example-spacer"></span>
-  <button class="menu__right" routerLink="/PaginaPrincipal" mat-button>{{ 'menuTextFirst' | translate }}</button>
-  <button class="menu__right" routerLink="/sobreMim" mat-button>{{ 'menuTextSecond' | translate }}</button>
-  <button class="menu__right" routerLink="/projetos" mat-button>{{ 'menuTextThird' | translate }}</button> 
-  <button class="menu__right" mat-button [matMenuTriggerFor]="menu">{{ 'menuTextFourth' | translate }}</button>
+  <button class="menu__right" routerLink="/PaginaPrincipal" mat-button>{{ 'PORTIFOLIO.MENU.PAGINA_PRINCIPAL' | translate }}</button>
+  <button class="menu__right" routerLink="/sobreMim" mat-button>{{ 'PORTIFOLIO.MENU.SOBRE_MIM' | translate }}</button>
+  <button class="menu__right" routerLink="/projetos" mat-button>{{ 'PORTIFOLIO.MENU.PROJETOS' | translate }}</button> 
+  <button class="menu__right" mat-button [matMenuTriggerFor]="menu">{{ 'PORTIFOLIO.MENU.IDIOMAS' | translate }}</button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="switchLanguage('pt-br')">{{ 'menuBottonfirst' | translate }}</button>
-    <button mat-menu-item (click)="switchLanguage('en')">{{ 'menuBottonSecond' | translate }}</button>
-    <button mat-menu-item (click)="switchLanguage('es')">{{ 'menuBottonThird' | translate }}</button>
+    <button mat-menu-item (click)="switchLanguage('pt-br')">{{ 'PORTIFOLIO.MENU.PORTUGUES' | translate }}</button>
+    <button mat-menu-item (click)="switchLanguage('en')">{{ 'PORTIFOLIO.MENU.INGLES' | translate }}</button>
+    <button mat-menu-item (click)="switchLanguage('es')">{{ 'PORTIFOLIO.MENU.ESPANHOL' | translate }}</button>
+    <button mat-menu-item (click)="switchLanguage('fr')">{{ 'PORTIFOLIO.MENU.FRANCES' | translate }}</button>
+    <button mat-menu-item (click)="switchLanguage('de')">{{ 'PORTIFOLIO.MENU.ALEMAO' | translate }}</button>
   </mat-menu>
 </mat-toolbar>
 <mat-drawer-container autosize>
   <mat-drawer #drawer opened="false" mode="over" position="start">
   <mat-nav-list >
       <mat-list-item>
-        <button class="menu__drawer" (click)="drawer.close()" routerLink="/PaginaPrincipal" mat-button><mat-icon>home</mat-icon>{{ 'menuTextFirst' | translate }}</button>
+        <button class="menu__drawer" (click)="drawer.close()" routerLink="/PaginaPrincipal" mat-button><mat-icon>home</mat-icon>{{ 'PORTIFOLIO.MENU.PAGINA_PRINCIPAL' | translate }}</button>
       </mat-list-item>
       <mat-list-item>
-        <button class="menu__drawer" (click)="drawer.close()" routerLink="/sobreMim" mat-button><mat-icon>person</mat-icon>{{ 'menuTextSecond' | translate }}</button>
+        <button class="menu__drawer" (click)="drawer.close()" routerLink="/sobreMim" mat-button><mat-icon>person</mat-icon>{{ 'PORTIFOLIO.MENU.SOBRE_MIM' | translate }}</button>
       </mat-list-item>
       <mat-list-item>
-        <button class="menu__drawer" (click)="drawer.close()" routerLink="/projetos" mat-button><mat-icon>insert_drive_file</mat-icon>{{ 'menuTextThird' | translate}}</button>
+        <button class="menu__drawer" (click)="drawer.close()" routerLink="/projetos" mat-button><mat-icon>insert_drive_file</mat-icon>{{ 'PORTIFOLIO.MENU.PROJETOS' | translate }}</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button class="menu__drawer" mat-button [matMenuTriggerFor]="menu" mat-button><mat-icon>g_translate</mat-icon>{{ 'PORTIFOLIO.MENU.IDIOMAS' | translate }}</button>
       </mat-list-item>
   </mat-nav-list>
   </mat-drawer>
@@ -32,4 +37,3 @@
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
-

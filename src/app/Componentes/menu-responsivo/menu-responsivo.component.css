@@ -15,7 +15,8 @@
 }
 
 .mat-drawer {
-  bottom: auto;
+  
+  
   border-radius: 6px;
   background-color: var(--cor-primaria);
   border: 1px solid var(--cor-terciaria);
@@ -85,6 +86,12 @@ a:-webkit-any-link {
   .menu__right {
     display: none;
   }
+
+  .mat-drawer {
+    bottom: 50%;
+  }
+
+
   
 }
 
