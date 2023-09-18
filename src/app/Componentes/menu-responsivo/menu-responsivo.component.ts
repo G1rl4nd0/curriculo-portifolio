@@ -10,15 +10,15 @@ export class MenuResponsivoComponent implements OnInit {
 
 
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('pt-br');
+   
   }
 
   ngOnInit(): void {
   }
 
-  switchLanguage(Language: string) {
-    this.translate.use(Language);
-  
+  switchLanguage(language: string) {
+    this.translate.use(language);
+    localStorage.setItem('idioma', language)
   }
 
 

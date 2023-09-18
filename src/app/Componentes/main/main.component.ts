@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -9,18 +8,10 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('pt-br');
-  
-  }
+  constructor() {}
 
   ngOnInit(): void {
-    console.log(this.translate.instant('PORTIFOLIO.APRESENTACAO.TITULO'))
-  }
-
-  switchLanguage(Language: string) {
-    this.translate.use(Language);
-    // console.log(this.translate.instant('PORTIFOLIO.APRESENTACAO.TITULO'))
+    
   }
 
 }

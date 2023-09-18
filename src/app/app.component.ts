@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
+const IDIOMA_PADRAO = "pt-br"
 
 @Component({
   selector: 'app-root',
@@ -11,15 +12,15 @@ export class AppComponent {
   title = 'angular-projeto';
 
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('pt-br');
-    this.translate.use('pt-br');
+    let idioma = localStorage.getItem('idioma');
+    if (!idioma) {
+      idioma = IDIOMA_PADRAO;
+    }
+    this.translate.setDefaultLang(IDIOMA_PADRAO);
+    this.translate.use(idioma);
     
   }
 
-  switchLanguage(Language: string) {
-    this.translate.use(Language);
   
-  }
-
 
 }
