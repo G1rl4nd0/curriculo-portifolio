@@ -4,6 +4,15 @@
 
 }
 
+.paragrafo__link {
+    margin-top: 12px;
+    
+}
+
+.logo__link {
+    height: 38px;
+}
+
 .apresentacao {
     padding: 10% 10%;
     display: flex;
@@ -70,7 +79,7 @@
 }
 
 .botao__link:hover {
-    background-color: #272727;
+    background-color: #202024;
 
 }
 
