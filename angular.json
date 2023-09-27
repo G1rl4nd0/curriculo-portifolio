@@ -123,7 +123,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/Portifolio-Angular/"
+            "baseHref": "/"
           }
         }
       }
