@@ -1,0 +1,22 @@
+{
+  "PORTIFOLIO": {
+    "APRESENTACAO": {
+      "TITULO": "Take your digital business to another level with a quality Front-end!",
+      "PARAGRAFO":  "Hello, I'm Girlando Junior, front-end developer specializing in Html, Css, Javascript and Angular. I am an intern at the company Inforplus in web development.",
+      "LINKS": "Access my networks:",
+      "FOOTER": "Developed by Alura."
+    },
+    "MENU": {
+      "TITULO": "Professional Profile",
+      "PAGINA_PRINCIPAL": "Home Page",
+      "SOBRE_MIM": "About Me",
+      "PROJETOS": "Projects",
+      "IDIOMAS": "Languages",
+      "PORTUGUES": "Portuguese (Brazil)",
+      "INGLES": "English",
+      "ESPANHOL": "Espanhol",
+      "FRANCES": "French",
+      "ALEMAO": "German"
+    }
+  }
+}
