@@ -9,7 +9,8 @@
 }
 
 .mat-drawer-container {
-  background-color: var(--cor-primaria);
+  background: linear-gradient(#1875E9, #041832, #01080E);
+  background-size: auto;
   color: var(--cor-secundaria);
 
 }
